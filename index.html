@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      background-color: aliceblue;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container{
+      background-color: white;
+      width: 1200px;
+      height: 600px;
+      padding-top: 100px;
+      padding-left: 100px;
+      display: flex;
+      flex-direction: column;
+      gap: 80px;
+      position: relative;
+    }
+    *{
+      font-family: Josefin Sans;
+    }
+    span{
+      font-weight: 300;
+      color: #cb9c9f;
+    }
+    p{
+      color: #cb9c9f;
+      max-width: 450px;
+      font-weight: 400;
+      margin-top: -80px;
+    }
+    h1{
+      font-weight: 600;
+      letter-spacing: 10px;
+      font-size: 50px;
+    }
+    .enter{
+      background-color: white;
+      border: 1px solid #cb9c9f;
+      height: 30px;
+      width: 450px;
+      border-radius: 50px;
+    }
+    .email{
+      display: flex;
+      flex-direction: row;
+    }
+    .arrow{
+      background-color: #cb9c9f;
+      width: 60px;
+      height: 33px;
+      border-radius: 50px;
+      border: none;
+      margin-left: -60px;
+    }
+    input{
+      padding-left: 30px;
+    }
+    .icon{
+      margin-top: -50px;
+    }
+    .main{
+      height: 700px;
+      width: 500px;
+    }
+    .mainimg{
+      position: absolute;
+      top: 0px;
+      right: 0px;
+    }
+    @media screen and (max-width: 450px) {
+      .body{
+        display: flex;
+        flex-direction: column;
+      }
+      .container{
+        flex-direction: column;
+        width: 100%;
+        height: 1200px;
+        padding-left: 20px;
+      }
+      .main{
+        min-width: 100%;
+      }
+      .maintext{
+        margin-top: 700px;
+      }
+      .icon{
+        margin-top: -50px;
+      }
+      .mainimg{
+        display: flex;
+        justify-content: center;
+        margin-top: 130px;
+      }
+      p{
+        max-width: 400px;
+      }
+      .enter{
+        width: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="icon">
+      <img src="images/logo.svg" alt="photo">
+    </div>
+    <div class="maintext">
+      <h1><span>WE'RE</span><br>COMING<br>SOON</h1>
+    </div>
+    <div class="text">
+      <p>  Hello fellow shoppers! We're currently building our new fashion store. 
+        Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+    </div>
+    <div class="email">
+      <input class="enter" type="email" placeholder="Email Address">
+      <img class="arrow" src="images/icon-arrow.svg" alt="photo">
+    </div>
+    <div class="mainimg">
+      <img class="main" src="./images/hero-mobile.jpg" alt="photo">
+    </div>
+  </div>
+  
+</body>
+</html>
